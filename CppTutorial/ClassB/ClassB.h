@@ -35,8 +35,10 @@ public:
         return (l == r);
     }
     
+    int GetNextIndex() const;
+    
 private:
-
+    mutable int ind;
 
 };
 

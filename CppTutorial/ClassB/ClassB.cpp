@@ -13,19 +13,29 @@
 
 #include "ClassB.h"
 
-ClassB::ClassB(const ClassB& orig) {
+ClassB::ClassB(const ClassB& orig)
+    : ind(0)
+{
+    
 }
 
 ClassB::ClassB(const int x)
+    : ind(0)
 {
     
 }
 
 ClassB::ClassB(const std::string& str)
+    : ind(0)
 {
     std::cout << str << std::endl;
 }
 
 ClassB::~ClassB() {
+}
+
+int ClassB::GetNextIndex() const
+{
+    return ++ind;
 }
 

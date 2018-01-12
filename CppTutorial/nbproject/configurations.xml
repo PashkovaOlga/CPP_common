@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="100">
+<configurationDescriptor version="97">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="GoodClass" displayName="GoodClass" projectFiles="true">
+      <itemPath>GoodClass/GoodClass.cpp</itemPath>
+      <itemPath>GoodClass/GoodClass.h</itemPath>
+      <itemPath>GoodClass/GoodClass_tmplt.h</itemPath>
+    </logicalFolder>
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
@@ -35,6 +40,9 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>GoodClass</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="1">
@@ -52,6 +60,12 @@
       <item path="ClassB/ClassB.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ClassB/ClassB.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GoodClass/GoodClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GoodClass/GoodClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GoodClass/GoodClass_tmplt.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="KeyWords/Declaration.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -89,6 +103,12 @@
       <item path="ClassB/ClassB.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ClassB/ClassB.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GoodClass/GoodClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GoodClass/GoodClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GoodClass/GoodClass_tmplt.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="KeyWords/Declaration.h" ex="false" tool="3" flavor2="0">
       </item>

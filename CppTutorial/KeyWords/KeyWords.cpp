@@ -70,3 +70,9 @@ void KeyWords::macros_func_exmpl()
     //WRONG
     std::cout << "EQUAL: " << EQUAL(5, 10) << std::endl;
 }
+
+void KeyWords::mutable_const_exmpl()
+{
+    ClassB objB;
+    objB.GetNextIndex();
+}

@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/ClassA/ClassA.o \
 	${OBJECTDIR}/ClassB/ClassB.o \
+	${OBJECTDIR}/GoodClass/GoodClass.o \
 	${OBJECTDIR}/KeyWords/KeyWords.o \
 	${OBJECTDIR}/main.o
 
@@ -65,22 +66,27 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cpptutorial: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cpptutorial ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/ClassA/ClassA.o: ClassA/ClassA.cpp
+${OBJECTDIR}/ClassA/ClassA.o: ClassA/ClassA.cpp 
 	${MKDIR} -p ${OBJECTDIR}/ClassA
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ClassA/ClassA.o ClassA/ClassA.cpp
 
-${OBJECTDIR}/ClassB/ClassB.o: ClassB/ClassB.cpp
+${OBJECTDIR}/ClassB/ClassB.o: ClassB/ClassB.cpp 
 	${MKDIR} -p ${OBJECTDIR}/ClassB
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ClassB/ClassB.o ClassB/ClassB.cpp
 
-${OBJECTDIR}/KeyWords/KeyWords.o: KeyWords/KeyWords.cpp
+${OBJECTDIR}/GoodClass/GoodClass.o: GoodClass/GoodClass.cpp 
+	${MKDIR} -p ${OBJECTDIR}/GoodClass
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GoodClass/GoodClass.o GoodClass/GoodClass.cpp
+
+${OBJECTDIR}/KeyWords/KeyWords.o: KeyWords/KeyWords.cpp 
 	${MKDIR} -p ${OBJECTDIR}/KeyWords
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/KeyWords/KeyWords.o KeyWords/KeyWords.cpp
 
-${OBJECTDIR}/main.o: main.cpp
+${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
@@ -91,6 +97,7 @@ ${OBJECTDIR}/main.o: main.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cpptutorial
 
 # Subprojects
 .clean-subprojects:

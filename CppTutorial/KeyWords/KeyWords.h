@@ -30,6 +30,7 @@ public:
     static void copy_constructor_exmpl();
     static void const_vars_exmpl();
     static void macros_func_exmpl();
+    static void mutable_const_exmpl();
     
     
 
